@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send Email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G6BG8KV70C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-G6BG8KV70C');
+</script>
+
+<script>
+
+const subjects = [
+"Urgent Appeal Regarding Educational Access and Discrimination Against Iranian Students",
+"Formal Appeal Regarding the Suspension of Exam Services for Iranian Scholars",
+"Urgent Inquiry and Petition Concerning Test Cancellations for Iranian Candidates",
+"Urgent Call to Action: Restoring Educational Testing Access for Iranian Applicants",
+"Petition for Reconsideration: Examination Restrictions Imposed on Iranian Students",
+"Request to Review Policy Restricting Iranian Test-Takers for Standardized Exams",
+"Urgent Appeal: Impact of Exam Cancellations on Iranian Students",
+"Open Letter Regarding Testing Access for Iranian Students and Scholars",
+"Formal Request for Policy Re-evaluation Concerning Iranian Test-Takers",
+"Urgent Reconsideration Request: Exam Restrictions on Iranian Candidates",
+"Appeal to Reopen Standardized Examination Access for Iranian Passport Holders"
+];
+
+const bodies = [
+`Dear Board of Directors and Executive Leadership,
+
+I am writing to you on behalf of thousands of Iranian students, researchers, and young professionals to express our deep concern and profound disappointment regarding the recent restrictions and cancellations imposed on Iranian test-takers for the TOEFL, GRE, Duolingo English Test, and PTE examinations.
+
+Education and academic mobility are fundamental human rights that transcend political borders and governmental conflicts. By banning or restricting Iranian citizens—and in some cases, prohibiting Iranian passport holders regardless of their country of residence—from taking these essential language and standardized tests, your organizations are unfairly penalizing innocent students. Geopolitical tensions between governments should never serve as a justification to block the pathways of ambitious scholars seeking higher education.
+
+Iranian elites and scholars have consistently demonstrated exceptional academic merit, making vital contributions to leading universities and research institutions worldwide, particularly across North America and Europe. Denying an entire demographic the ability to demonstrate their academic qualifications directly contradicts the principles of equality, diversity, and educational access that your institutions claim to uphold.
+
+We strongly urge you to review these decisions, consult with relevant regulatory authorities to explore available legal exemptions, and reinstate fair exam access for Iranian passport holders. Educational opportunities should unite the global scientific and academic community, not serve as an instrument of exclusion.
+
+We look forward to your prompt reconsideration of this policy.
+Sincerely,`,
+
+`Dear Executive Leadership and Advisory Board,
+
+I am writing to you on behalf of a broad community of Iranian students, scholars, and young researchers to voice our deep concern regarding the recent suspension and prohibition of testing services—specifically TOEFL, GRE, the Duolingo English Test, and PTE—for Iranian candidates.
+
+Access to global education is a fundamental right that ought to remain separate from international political conflict. Restricting Iranian students, as well as foreign-resident holders of Iranian passports, from taking these mandatory standard evaluations imposes an unjust obstacle on innocent individuals. Geopolitical disagreements between governments should never interfere with the legitimate academic aspirations of qualified students seeking higher learning.
+
+Iranian scholars have long established a track record of academic excellence and valuable research contributions across leading global universities, particularly in North America and Europe. Denying an entire nationality the opportunity to demonstrate their academic capabilities stands in direct opposition to the commitments toward diversity, equity, and educational inclusion that your organization advocates.
+
+We respectfully urge your administration to review this directive, engage with relevant legal authorities to explore policy exemptions, and restore equal testing access to Iranian passport holders. Academic pathways should serve to connect the global scientific community rather than act as barriers.
+
+We anticipate a prompt and thorough reconsideration of this stance.
+
+Sincerely,`,
+
+`To the Board of Directors and Policy Decision-Makers,
+
+This communication is submitted on behalf of thousands of Iranian applicants and academics to register our profound objection to the recent restrictions placed on Iranian test-takers across key assessment platforms, including the TOEFL, GRE, Duolingo English Test, and PTE.
+
+Education and intellectual growth represent universal human values that must be safeguarded from diplomatic disputes. Broad restrictions targeted at Iranian nationals—including measures that penalize passport holders residing outside Iran—unreasonably burden students who are merely attempting to pursue higher education. Political tensions ought not to be converted into educational barriers for prospective students.
+
+Historically, Iranian researchers and students have significantly enriched international academic institutions through top-tier performance, groundbreaking research, and scholarly dedication. Excluding qualified applicants solely based on nationality undermines the core principles of academic meritocracy and equal educational access.
+
+We strongly request that your leadership re-evaluate these measures, consult appropriate regulatory entities for potential humanitarian and educational waivers, and re-establish standard exam operations for Iranian candidates.
+
+Thank you for your attention to this critical matter, and we look forward to your response.
+
+Sincerely,`,
+
+`Dear Testing Board Members and Executive Management,
+
+I am writing this appeal on behalf of a coalition of Iranian students and academics to express our urgent concern regarding the cancellation of testing availability—namely TOEFL, GRE, Duolingo, and PTE—for individuals holding Iranian citizenship.
+
+Restricting access to educational examinations violates the core principle of equal educational opportunity. Applying blanket prohibitions to Iranian students, including those living abroad, effectively penalizes individuals for political realities beyond their control. Academic potential should never be compromised by geopolitical conflicts or state-level disagreements.
+
+Iranian students consistently demonstrate outstanding achievements in major global universities, making vital contributions to research and development worldwide. Preventing these talented individuals from providing proof of language proficiency and academic readiness contradicts your stated mission of promoting global learning and inclusivity.
+
+We urge your organization to immediately re-examine this policy, seek necessary legal avenues to allow compliance exemptions, and reauthorize exam registration for Iranian passport holders.
+
+We appreciate your swift consideration of this petition.
+
+Sincerely,`,
+
+`Dear Members of the Executive Board,
+
+This letter represents the unified voice of Iranian students, academics, and supporters worldwide who are deeply troubled by the recent cancellation of standardized exams—including TOEFL, GRE, Duolingo English Test, and PTE—for Iranian test-takers.
+
+Higher education and scholarly collaboration rely on open access regardless of national origin. By barring Iranian passport holders from completing necessary admissions examinations, your policy unfairly disadvantages ambitious young scholars. State-level political disputes must not dictate who receives the opportunity to sit for an educational assessment.
+
+Over many decades, Iranian scholars have proven to be vital members of global academic institutions, contributing significantly to engineering, sciences, medicine, and the humanities. Denying them the means to apply to international universities compromises educational diversity and institutional integrity.
+
+We call upon your organization to review these administrative choices, consult with regulatory bodies regarding permissible academic exemptions, and reinstate fair testing availability for Iranian applicants.
+
+We look forward to hearing about your decision on this matter.
+Sincerely,`,
+
+`To the Leadership Team and Governance Board,
+
+I am writing on behalf of a large community of Iranian university candidates to officially address the policy changes that have restricted or cancelled testing services (TOEFL, GRE, Duolingo, and PTE) for Iranian applicants.
+
+Educational rights are fundamental human rights that must remain protected from political influence. Imposing testing bans on Iranian citizens, including those residing in third countries, creates an unjust penalty for prospective students. Political friction between governments should never serve as grounds to restrict student mobility and intellectual development.
+
+Iranian candidates have consistently maintained high standards of academic achievement, representing key research assets at premier universities globally. Enforcing systemic barriers that prevent them from demonstrating proficiency runs counter to the values of fairness and educational accessibility.
+
+We strongly petition your leadership to revisit these policies, explore options for regulatory waivers with relevant authorities, and reopen examination access for all Iranian passport holders.
+
+Thank you for your prompt review of this important issue.
+Sincerely,`,
+
+`Dear Executive Committee and Admissions Assessment Teams,
+
+On behalf of Iranian students and prospective university applicants, I am submitting this urgent request regarding the recent cancellation and restriction of essential exams—including TOEFL, GRE, PTE, and Duolingo—for Iranian candidates.
+
+Gaining an education is an essential human endeavor that should transcend geopolitical strife. The decision to restrict Iranian students from taking these foundational examinations severely impedes their ability to pursue higher studies. Disagreements between nations should not result in the marginalization of young scholars working toward academic advancement.
+
+Iranian students have a established record of excellence in academic institutions across North America, Europe, and beyond. Preventing these candidates from taking standardized assessments directly undermines equal opportunity and limits the global academic community from welcoming top-tier talent.
+
+We earnestly request that you reconsider this prohibition, seek legal options for educational exemptions, and restore testing access for Iranian candidates worldwide.
+
+We await your feedback on this critical matter.
+Sincerely,`,
+
+  `Dear Board of Directors,
+
+I am writing to bring your attention to the serious concerns of Iranian students and educators regarding the suspension of testing options—including the TOEFL, GRE, Duolingo English Test, and PTE—for Iranian nationals.
+
+Academic advancement and cross-border learning should remain isolated from political disputes. Restricting Iranian passport holders from taking standard proficiency tests creates unnecessary hardships for individuals who seek only to further their education. Political disputes between governments should not impede the rights of students to pursue their academic goals.
+
+Iranian scholars consistently rank among the top performers at leading international universities, contributing immensely to scientific innovation and scholarly work. Restricting their access to mandatory entrance examinations directly conflicts with principles of merit, inclusion, and academic freedom.
+
+We respectfully request that your administration re-evaluates these restrictions, works with compliance authorities to identify viable legal mechanisms, and re-establishes testing options for Iranian students.
+
+Thank you for your time, consideration, and leadership on this issue.
+
+Sincerely,`,
+
+  `Dear Executive Board and Testing Program Administrators,
+
+This correspondence is conveyed on behalf of Iranian applicants globally to voice our objection to the policy decisions suspending standardized testing services (TOEFL, GRE, Duolingo, and PTE) for Iranian individuals.
+
+Educational opportunity is a fundamental right that must not be subjected to political conflicts. The decision to bar Iranian citizens from registering for or completing these tests imposes an arbitrary penalty on students. Governmental tensions should never be used as a basis to obstruct the academic futures of qualified individuals.
+
+Iranian candidates have consistently made substantial contributions to major research facilities and universities across the globe. Preventing an entire demographic from demonstrating their academic eligibility directly contradicts the core commitments of diversity and equal access championed by global educational organizations.
+
+We urge your leadership to conduct a comprehensive review of this decision, engage with governing authorities to secure necessary exemptions, and allow Iranian passport holders equal access to your examinations.
+
+We look forward to your timely response.
+
+Sincerely,`,
+
+ `Dear Board of Directors and Executive Leadership,
+
+I am contacting you on behalf of thousands of Iranian students to address the recent cancellation of standardized tests—including TOEFL, GRE, Duolingo, and PTE—for Iranian applicants.
+
+Access to educational assessment is a basic right that should remain independent of international political conflicts. Denying Iranian students the chance to take these exams unfairly penalizes scholars seeking higher education. Political hostilities between states must not hamper student progress or academic mobility.
+
+Iranian scholars have repeatedly demonstrated exceptional talent and dedication at top-tier international universities. Restricting their ability to take required language and academic tests impedes intellectual exchange and contradicts the spirit of equal educational opportunity.
+
+We ask that you re-examine this policy immediately, pursue regulatory exemptions with appropriate agencies, and restore fair testing access to Iranian passport holders.
+
+Thank you for your consideration.
+Sincerely,`,
+  
+`Dear Leadership Council and Testing Organization Executives,
+
+I write to you on behalf of the Iranian student community to express our deep concern over the prohibition of testing services—specifically TOEFL, GRE, PTE, and Duolingo—for Iranian candidates.
+
+Education and scholarly growth are universal rights that should be protected from geopolitical tensions. Disconsidering Iranian candidates or restricting Iranian passport holders from accessing essential exams creates an unacceptable barrier for prospective university applicants. Political disputes between nations should never result in educational exclusion.
+
+Iranian scholars consistently demonstrate high academic standards and contribute significantly to global academic advancement. Denying them the tools to verify their qualifications harms both the students and the international institutions that benefit from their talent.
+
+We respectfully urge your governing body to review this policy, seek applicable regulatory waivers, and ensure that Iranian students are once again granted equitable access to your examinations.
+
+We appreciate your prompt attention to this matter.
+
+Sincerely,`
+];
+
+function sendEmail(){
+
+const subject = subjects[Math.floor(Math.random() * subjects.length)];
+const body = bodies[Math.floor(Math.random() * bodies.length)];
+
+gtag('event','mailto_open',{
+event_category:'Email Campaign',
+event_label:'GitHub Redirect'
+});
+
+const mailto =
+"mailto:toefl@ets.org"
++ "?bcc=gre-info@ets.org,institutions@ets.org,media@pearson.com,ellen.clark@pearson.com,press@duolingo.com,institutional@duolingo.com,ir@duolingo.com"
++ "&subject=" + encodeURIComponent(subject) 
++ "&body=" + encodeURIComponent(body);
+
+window.location.href = mailto;
+
+}
+
+window.onload = sendEmail;
+
+</script>
+
+</head>
+
+<body>
+<p>اگه شما این پیام رو قبل از بازشدن ایمیل تون و کلیک روی ارسال می بینین. روی سه نقطه بالا سمت راست بزنین </p>
+ <p> Open in External Browser </p>
+</body>
+</html>
